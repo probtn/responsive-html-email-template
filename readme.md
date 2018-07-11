@@ -33,3 +33,4 @@ Tested on mobile, desktop and web.
 * [More Responsive HTML Email Templates](http://htmlemail.io)
 * [An Introduction To Building And Sending HTML Email For Web Developers](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 * [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
+* [Send HTML email online](https://putsmail.com)
