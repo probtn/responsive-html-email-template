@@ -193,7 +193,7 @@
   }
 
   h3 {
-    height: 44px;
+    /*height: 44px;*/
     font-family: Arial;
     font-size: 36px;
     font-weight: normal;
@@ -201,7 +201,7 @@
     font-stretch: normal;
     line-height: 1.22;
     letter-spacing: normal;
-    text-align: left;
+    /*text-align: left;*/
     color: #000000;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -215,7 +215,7 @@
     font-size: 14px;
     font-weight: normal;
     margin: 0;
-    Margin-bottom: 15px;
+    margin-bottom: 15px;
     line-height: 24px;
   }
 
@@ -256,7 +256,7 @@
   .btn a {
     background-color: #ffffff;
     border: solid 1px #3498db;
-    border-radius: 5px;
+    border-radius: 24px;
     box-sizing: border-box;
     color: #3498db;
     cursor: pointer;
@@ -267,17 +267,27 @@
     padding: 12px 25px;
     text-decoration: none;
     text-transform: capitalize;
+    width: 221px;
+    height: 48px;
   }
 
   .btn-primary table td {
-    background-color: #3498db;
+    background-color: #ff6269;
   }
 
   .btn-primary a {
-    background-color: #3498db;
-    border-color: #3498db;
+    background-color: #ff6269;
+    border-color: #ff6269;
     color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
   }
+
+  /*width: 221px;
+  height: 48px;
+  border-radius: 24px;*/
+
+
   /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
@@ -431,10 +441,12 @@
       background-color: #34495e !important;
     }
     .btn-primary a:hover {
-      background-color: #34495e !important;
-      border-color: #34495e !important;
+      background-color: #FF3842 !important;
+      border-color: #FF3842 !important;
     }
   }
+
+
 
   </style>
 </head>
@@ -465,50 +477,45 @@
                   <tr>
                     <td>
                       <p>Отличные новости для всех, чьи клиенты любят видео форматы, но не хотят быть слишком назойливыми. Видео floater от Viewst поможет улучшить user experience и будет куда менее навязчивым, чем стандартные FullScreen или Inread видео. На дворе 2018-ый, пора расширять горизонты и пользоваться новыми необычными инструментами, чтобы подтолкнуть к этому своих клиентов, вас ждет приятный бонус в конце этого письма. Ниже предлагаем посмотреть цифры по последнему размещению J&J с этим форматом.</p>
-                      <table border="0" cellpadding="0" cellspacing="0" class="big_phone">
+
+
+                      <table border="0" cellpadding="0" cellspacing="0" class="">
                         <tbody width="100%">
                           <tr width="100%">
-                            <td>
-                                <img id="phone" src="https://cdn.probtn.com/email/images/iphone.png?r=23" alt="phone" />
-                            </td>
-                            <td>
+                            <td style="width: 33%; text-align: center;">
                               <h3>15 sec</h3>
                               <p>Viewable time</p>
+                            </td>
+                            <td style="width: 33%; text-align: center;">
                               <h3>53%</h3>
                               <p>Video Completion Rate</p>
+                            </td>
+                            <td style="width: 33%; text-align: center;">
                               <h3>3,9%</h3>
                               <p>CTR</p>
-                              <br/>
-                              <img id="anchor_img" src="https://cdn.probtn.com/email/images/group.png?r=231" alt="anchor" />
-                              <br/>
-                              <a href="https://cdn.probtn.com/button_example5/acuvue_cta_video_movable/">acuvue_cta_video_movable</a>
-
                             </td>
                           </tr>
-                        </tbody>
-                      </table>
-
-                      <table border="0" cellpadding="0" cellspacing="0" class="small_phone">
-                        <tbody width="100%">
                           <tr width="100%">
-                            <td width="100%">
+                            <td width="100%" colspan="3">
                               <center>
                                 <img id="phone" src="https://cdn.probtn.com/email/images/iphone.png?r=23" alt="phone" />
                               </center>
-                            </td>
-                          </tr>
-                          <tr width="100%">
-                            <td width="100%">
-                              <h3>15 sec</h3>
-                              <p>Viewable time</p>
-                              <h3>53%</h3>
-                              <p>Video Completion Rate</p>
-                              <h3>3,9%</h3>
-                              <p>CTR</p>
+                              <!--<img id="anchor_img" src="https://cdn.probtn.com/email/images/group.png?r=231" alt="anchor" />
                               <br/>
-                              <img id="anchor_img" src="https://cdn.probtn.com/email/images/group.png?r=231" alt="anchor" />
-                              <br/>
-                              <a href="https://cdn.probtn.com/button_example5/acuvue_cta_video_movable/">acuvue_cta_video_movable</a><br/><br/>
+                              <a href="https://cdn.probtn.com/button_example5/acuvue_cta_video_movable/">acuvue_cta_video_movable</a><br/><br/>-->
+
+
+                                      <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                        <tbody>
+                                          <tr>
+                                            <td style="text-align: center;"> 
+                                              <a href="http://htmlemail.io" target="_blank">Call To Action</a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+
                             </td>
                           </tr>
                         </tbody>
@@ -547,7 +554,7 @@
               </tr>
               <tr>
                 <td class="footer-address-block">
-                  <p>Москва, ул. Бауманская, д.7, БЦ Central Yard, 3 этаж, офис 306</p></td>
+                  <p style="margin-bottom: 32px;">Москва, ул. Бауманская, д.7, БЦ Central Yard, 3 этаж, офис 306</p></td>
               </tr>
             </table>
           </div>
