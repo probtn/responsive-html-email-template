@@ -3,10 +3,15 @@ module.exports = function(grunt) {
 	    inlinecss: {
 	        main: {
 	            options: {
+	            	webResources: {
+	            		'images': false
+	            	}
 	            },
 	            files: {
-	                'email_inlined_auto.html': 'email.html'
-	            }
+	                'email_inlined_auto.html': 'email.html',
+	                'email2_inlined_auto.html': 'email2.html'
+	            },
+
 	        }
 	    }
 	});
