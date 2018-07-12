@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 	            options: {
 	            },
 	            files: {
-	                'email.html': 'email_inlined_auto.html'
+	                'email_inlined_auto.html': 'email.html'
 	            }
 	        }
 	    }
