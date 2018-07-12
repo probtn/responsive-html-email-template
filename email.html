@@ -65,7 +65,7 @@
     display: block;
     Margin: 0 auto;
     max-width: 580px;
-    padding: 10px;
+    /*padding: 10px;*/
   }
   /* -------------------------------------
           HEADER, FOOTER, MAIN
@@ -82,6 +82,7 @@
 
   .main-header-img {
     width: 100%;
+    margin-bottom: -5px;
   }
 
   .main-logo-td {
@@ -103,8 +104,8 @@
   .wrapper {
     box-sizing: border-box;
     padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .content-block {
@@ -114,7 +115,7 @@
 
   .footer {
     clear: both;
-    Margin-top: 10px;
+    ьargin-top: 0px;
     text-align: center;
     width: 100%;
   }
@@ -199,11 +200,11 @@
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.22;
+    line-height: 0.8;
     letter-spacing: normal;
     /*text-align: left;*/
     color: #000000;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-left: 0px;
     margin-top: 25px;
   }
@@ -446,7 +447,13 @@
     }
   }
 
-
+.measure {
+font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 24px;
+}
 
   </style>
 </head>
@@ -483,15 +490,15 @@
                         <tbody width="100%">
                           <tr width="100%">
                             <td style="width: 33%; text-align: center;">
-                              <h3>15 sec</h3>
+                              <h3>15<span class="measure"> sec</span></h3>
                               <p>Viewable time</p>
                             </td>
                             <td style="width: 33%; text-align: center;">
-                              <h3>53%</h3>
+                              <h3>53<span class="measure">%</span></h3>
                               <p>Video Completion Rate</p>
                             </td>
                             <td style="width: 33%; text-align: center;">
-                              <h3>3,9%</h3>
+                              <h3>3,9<span class="measure">%</span></h3>
                               <p>CTR</p>
                             </td>
                           </tr>
