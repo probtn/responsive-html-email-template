@@ -231,6 +231,10 @@
     color: #3498db;
     text-decoration: underline;
   }
+
+  tr, td, table {
+    border-spacing: 0px;
+  }
   /* -------------------------------------
           BUTTONS
       ------------------------------------- */
@@ -351,17 +355,6 @@
           RESPONSIVE AND MOBILE FRIENDLY STYLES
       ------------------------------------- */
 
-  .small_phone {
-    display: none;
-  }
-  @media only screen and (max-width: 420px) {
-    .big_phone {
-      display: none;
-    }
-    .small_phone {
-      display: table;
-    }
-  }
 
   @media only screen and (max-width: 620px) {
     table[class=body] h1 {
@@ -466,7 +459,7 @@ font-family: Arial;
         <div class="content">
           <!-- START CENTERED WHITE CONTAINER -->
           <span class="preheader">Viewst Digest, Special Offer for BBDO Group</span>
-          <table class="main">
+          <table class="main" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td class="main-logo-td">
                 <center><img src="https://cdn.probtn.com/email/images/logo-1.png?r=11" alt="main-logo" /></center>
