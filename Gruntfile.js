@@ -9,7 +9,8 @@ module.exports = function(grunt) {
 	            },
 	            files: {
 	                'email_inlined_auto.html': 'email.html',
-	                'email2_inlined_auto.html': 'email2.html'
+	                'email2_inlined_auto.html': 'email2.html',
+	                'email_africa1_inlined_auto.html': 'email_africa1.html'
 	            },
 
 	        }
