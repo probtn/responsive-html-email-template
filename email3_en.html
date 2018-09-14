@@ -221,6 +221,11 @@
     line-height: 24px;
   }
 
+  .fs-16 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
   p li,
   ul li,
   ol li {
@@ -465,10 +470,31 @@
     margin-bottom: 10px;
   }
   .publishers td, .advertisers td {
-    text-align: center;
+    text-align: left;
   }
   .light_blue {
     background-color: #e7ecfe;
+  }
+  .li-elem {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.41;
+    color: #000000;
+    position: relative;
+    padding-left: 18px;
+    margin-left: 0px;
+  }
+
+  .li-elem:before {
+    content: "";
+    background: url(images/icon-star@2x.png) no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
   }
   </style>
 </head>
@@ -494,14 +520,14 @@
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
                     <td>
-                      <h2 class="red">Brand Lift from Viewst</h2>
-                      <p>Viewst platform combines Creative Builder which makes it fast and easy to create standard rich media ad units as well as innovative new placements such as floating ad units to capture consumers attention and deliver proven results. Viewst Ad Management Platform enables distribution of high quality ads across different data-driven channels and provides unified analytics to optimize media buying and results.</p>
+                      <h2 class="red mt0">What we do</h2>
+                      <p class="fs-16">Viewst platform combines Creative Builder which makes it fast and easy to create standard rich media ad units as well as innovative new placements such as floating ad units to capture consumers attention and deliver proven results. Viewst Ad Management Platform enables distribution of high quality ads across different data-driven channels and provides unified analytics to optimize media buying and results.</p>
 
                       <h2 class="red">Viewst offerings</h2>
-                      <ul>
-                        <li>Free production of floating ad units</li>
-                        <li>Programmatic media buying</li>
-                        <li>Detailed reporting</li>
+                      <ul style="padding-left: 0px;">
+                        <li class="li-elem">Free production of floating ad units</li>
+                        <li class="li-elem">Programmatic media buying</li>
+                        <li class="li-elem">Detailed reporting</li>
                       </ul>
                     </td>
                   </tr>
@@ -510,7 +536,7 @@
             </tr>
             <!-- END MAIN CONTENT AREA -->
           </table>
-  
+
           <div class="wrapper bg_red">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
@@ -522,6 +548,8 @@
                     <h3>38%</h3>
                     <p>Engagement<br/>rate</p>
                   </td>
+                </tr>
+                <tr>
                   <td>
                     <h3>27 sec</h3>
                     <p>Dwell time <br/>on a unit</p>
@@ -573,7 +601,7 @@
           <div class="wrapper publishers">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td colspan="3">
+                  <td colspan="3" style="text-align: left;">
                     <h3 class="red" style="margin-bottom: 40px;">Publishers</h3>
                   </td>
                 </tr>
@@ -613,7 +641,7 @@
                 <tr>
                   <td colspan="3">
                     <p class="quote" style="font-size: 20px; font-style: italic;">“Viewst is a new rich media channel for us, which delivers high quality traffic. It definitely becomes one of the best performing channels of our ad campaigns.”</p>
-                    <p><b>Alex Kovalenko, digital manager</b><br/>
+                    <p style="font-size: 16px;"><b>Alex Kovalenko, digital manager</b><br/>
                     20th Century Fox</p>
                   </td>
                 </tr>
