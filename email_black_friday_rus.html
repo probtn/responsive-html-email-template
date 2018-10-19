@@ -4,6 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="format-detection" content="telephone=no">
   <title>Simple Transactional Email</title>
   <style>
   /* -------------------------------------
@@ -13,7 +14,9 @@
   img {
     border: none;
     -ms-interpolation-mode: bicubic;
-    max-width: 100%;
+    max-width: 130px;
+    width: 100%;
+    height: auto;
   }
 
   body {
@@ -81,8 +84,9 @@
   }
 
   .main-header-img {
-    width: 90%;
-    margin-bottom: -55px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: -5px;
   }
 
   .main-logo-td {
@@ -96,10 +100,11 @@
     height: auto;
   }
 
-  #phone {
+  #phone, .phone {
     width: 252px;
     height: auto;
   }
+
 
   .wrapper {
     box-sizing: border-box;
@@ -117,8 +122,7 @@
     clear: both;
     margin-top: 0px;
     text-align: center;
-    background-color: #6f43d1;
-    background-image: linear-gradient(to right, #6f43d1, #349dea);
+    background-color: #2a9eee;
     width: 100%;
   }
 
@@ -131,44 +135,45 @@
     text-align: center;
   }
 
-  .footer img {
+  .footer-img {
+    background-image: linear-gradient(to right, #6f43d1, #349dea);
+  }
+
+  .footer-img img {
     margin-top: 12px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 110px;
     height: auto;
     max-width: 110px;
+  }
+
+  .footer table {
+    background-color: #2a9eee;
   }
 
   .footer .footer-logo-block .footer-logo {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     width: 100%;
     height: auto;
     max-width: 110px;
   }
-
-.footer-logo {
-  margin-top: 12px;
-  margin-bottom: 10px;
-  width: 100%;
-  height: auto;
-  max-width: 110px;
-}
 
   .footer .footer-address-block {
     vertical-align: middle;
   }
 
-  .footer .footer-blue {
+  .footer .footer-red {
     text-align: center;
     vertical-align: middle;
     color: white;
-    background-color: #2a9eee;
+    background-color: #ff6269;
   }
 
-  .footer-blue img {
-    margin-top: 48px;
-    width: 33%;
+  .footer-red img {
+    margin-top: 35px;
+    width: 48px;
+    max-width: 48px;
     height: auto;
   }
 
@@ -201,26 +206,43 @@
 
   h2 {
     font-family: Arial;
-    font-size: 36px;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    font-size: 35px;
+    margin-bottom: 60px;
+    margin-top: 60px;
     font-weight: bold;
+    text-align: center;
   }
 
   h3 {
     /*height: 44px;*/
     font-family: Arial;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0.8;
+    line-height: 44px;
     letter-spacing: normal;
     /*text-align: left;*/
     color: #000000;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  h4 {
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    /*text-align: left;*/
+    color: #000000;
+    margin-bottom: 25px;
     margin-left: 0px;
     margin-top: 25px;
+    text-align: center;
   }
 
   p,
@@ -231,12 +253,7 @@
     font-weight: normal;
     margin: 0;
     margin-bottom: 15px;
-    line-height: 24px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
-    line-height: 23px;
+    line-height: 1.86;;
   }
 
   p li,
@@ -247,8 +264,8 @@
   }
 
   a {
-    color: #3498db;
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: none;
   }
 
   tr, td, table {
@@ -279,20 +296,20 @@
 
   .btn a {
     background-color: #ffffff;
-    border: solid 1px #3498db;
+    border: solid 1px #ff6269;
     border-radius: 24px;
-    box-sizing: border-box;
-    color: #3498db;
+    color: #ff6269;
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
     margin: 0;
     padding: 12px 25px;
     text-decoration: none;
-    text-transform: capitalize;
-    width: 221px;
+    text-transform: uppercase;
+    line-height: 24px;
+    width: 149px;
     height: 48px;
+    box-sizing: border-box;
   }
 
   .btn-primary table td {
@@ -300,11 +317,11 @@
   }
 
   .btn-primary a {
-    background-color: #ff6269;
+    background-color: #ffffff;
     border-color: #ff6269;
-    color: #ffffff;
+    color: #ff6269;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   /*width: 221px;
@@ -409,7 +426,7 @@
       width: 100% !important;
     }
     table[class=body] .btn a {
-      width: 100% !important;
+    /*  width: 100% !important; */
     }
     table[class=body] .img-responsive {
       height: auto !important;
@@ -418,15 +435,18 @@
     }
   }
 
-  .footer-blue p {
-    font-size: 22px !important;
-    margin-bottom: 70px;
-    margin-right: 40px;
-    margin-left: 40px;
-    line-height: 28px;
-    font-weight: bold;
+  .footer-red img {
+    text-align: left;
   }
 
+  .footer-red p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 28px;
+    font-weight: normal;
+    margin-top: 25px;
+    text-align: left;
+  }
 
   /* -------------------------------------
           PRESERVE THESE STYLES IN THE HEAD
@@ -444,6 +464,16 @@
     .ExternalClass div {
       line-height: 100%;
     }
+    .appleLinks a {
+      color:#ffffff !important;
+       text-decoration: none !important;
+     }
+
+    .appleLinksWhite a {
+      color:#ffffff;
+      text-decoration: none;
+    }
+
     .apple-link a {
       color: inherit !important;
       font-family: inherit !important;
@@ -456,53 +486,54 @@
       background-color: #34495e !important;
     }
     .btn-primary a:hover {
-      background-color: #FF3842 !important;
-      border-color: #FF3842 !important;
+      /*background-color: #FF3842 !important;
+      border-color: #FF3842 !important;*/
+      background-color: #ff6269 ;
+      border-color: #ff6269;
+      color: #ffffff;
     }
   }
 
-.measure {
-  font-family: Arial;
-      font-size: 14px;
-      font-weight: normal;
-      margin: 0;
-      line-height: 24px;
+  .measure {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 44px;
   }
   .red {
+    text-transform: uppercase;
     color: #ff6269;
   }
 
-  .bg_red {
-    background-color: #ff6269;
-    color: white;
-  }
-  .bg_red h3 {
-    color: white;
-  }
-  .publishers img, .advertisers img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .publishers td, .advertisers td {
-    text-align: left;
-  }
-  .light_blue {
-    background-color: #e7ecfe;
-    padding-top: 35px;
-  }
-  .li-elem {
-    list-style-type: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.41;
-    color: #000000;
-    position: relative;
-    /*padding-left: 18px;*/
-    margin-left: 0px;
+  #black-friday-big-text-block {
+    border-left: #ff686f 4px solid;
+    padding-left: 30px;
+    margin: 25px 0px 25px 10px;
+
   }
 
-  .li-elem + .li-elem {
-    margin-top: 8px;
+  #black-friday-big-text-block > p {
+    font-size: 25px;
+    line-height: 1.4;
+    font-style: italic;
+    font-family: Georgia;
+  }
+
+  #icon_phone {
+    width: 29px;
+    max-width: 29px;
+    height: auto;
+  }
+
+  .footer-red a
+  {
+    background-color: #ff6269;
+    color: #ffffff;
+    border-color: #ffffff;
+    margin-bottom: 25px;
+    width: 295px;
+    height: 48px;
   }
 
   .img-star {
@@ -511,23 +542,25 @@
     background-size: cover;
     width: 14px;
     height: 14px;
-    position: absolute;
+    position: relative;
     left: 0px;
-    top: 2px;
-  }
+    top: 0px;
+    display: inline-block;
+}
+.li-elem {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.41;
+  color: #000000;
+  position: relative;
+  /* padding-left: 18px; */
+  margin-left: 0px;
+}
 
-  .logos {
-    max-width: 767px;
-    width: 100%;
-  }
-
-  .advertisers {
-    padding-top: 0px;
-  }
-
-  .table-td p {
-    color: white;
-  }
+li + li{
+  margin-top: 10px;
+}
   </style>
 </head>
 
@@ -541,26 +574,61 @@
           <span class="preheader">Viewst Digest, Special Offer for Publicis Groupe</span>
           <table class="main" border="0" cellpadding="0" cellspacing="0">
             <tr>
-              <td class="main-logo-td">
-                <center><img src="https://cdn.probtn.com/emails/images/logo-1.png?r=11" alt="main-logo" /></center>
+              <td>
+                <img class="main-header-img" src="https://cdn.probtn.com/emails/images/pic-main-bf-rus@2x.png?r=12" alt="main header" />
               </td>
             </tr>
             <!-- START MAIN CONTENT AREA -->
             <tr class="main2">
               <td class="wrapper">
-                <img class="main-header-img" src="https://cdn.probtn.com/emails/images/phone-picture@2x.png?r=11" alt="main header" />
                 <table border="0" cellpadding="0" cellspacing="0">
                   <tr>
                     <td>
-                      <h2 class="red mt0">What we do</h2>
-                      <p class="fs-16">Viewst platform combines Creative Builder which makes it fast and easy to create standard rich media ad units as well as innovative new placements such as floating ad units to capture consumers attention and deliver proven results. Viewst Ad Management Platform enables distribution of high quality ads across different data-driven channels and provides unified analytics to optimize media buying and results.</p>
-
-                      <h2 class="red">Viewst offerings</h2>
+                      <p>
+                        Успейте анонсировать ваши акции широкой аудитории!
+                      </p>
                       <ul style="padding-left: 0px;">
-                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Free production of floating ad units</b></li>
-                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Programmatic media buying</b></li>
-                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Detailed reporting</b></li>
+                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Бесплатно разработаем концепцию</b></li>
+                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Соберем нестандартный плавающий баннер, кастомизированный под вашу ЦА</b></li>
+                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Запустим рекламную кампанию</b></li>
+                        <li class="li-elem"><img class="img-star" src="https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11" /><b>&nbsp;Предоставим детальный отчет</b></li>
                       </ul>
+                      <p>За выходные “Черная Пятница” в 2017, трафик пользователей на сайте МВидео вырос вдвое, в то время, как число заказов выросло на 250% относительно обычных осенних выходных.</p>
+
+                      <h2>Примеры Viewst кейсов</h2>
+                      <table border="0" cellpadding="0" cellspacing="0" class="">
+                        <tbody width="100%">
+                          <tr width="100%">
+                            <td style="width: 50%; text-align: center; padding-bottom: 60px;">
+                              <img src="https://cdn.probtn.com/emails/images/case-1.gif?r=123" style="margin-bottom: 7px;">
+                              <div class="btn">
+                                <a href="https://demo.probtn.com/button_example/citroen_c3/v1/" target="_blank">Демо</a>
+                              </div>
+                            </td>
+                            <td style="width: 50%; text-align: center;">
+                              <img src="https://cdn.probtn.com/emails/images/case-4.gif?r=123">
+                              <div class="btn">
+                                <a href="https://demo.probtn.com/button_example5/sportmaster_columbia_anim_2/" target="_blank">Демо</a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr width="100%">
+                            <td style="width: 50%; text-align: center; padding-bottom: 45px;">
+                              <img src="https://cdn.probtn.com/emails/images/case-2.gif?r=123">
+                              <div class="btn">
+                                <a href="https://demo.probtn.com/button_example/mugler/" target="_blank">Демо</a>
+                              </div>
+                            </td>
+                            <td style="width: 50%; text-align: center;">
+                              <img src="https://cdn.probtn.com/emails/images/case-3.gif?r=123">
+                              <div class="btn">
+                                <a href="http://demo.probtn.com/button_example/rivegauche/v3/v2-2/" target="_blank">Демо</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -568,92 +636,23 @@
             </tr>
             <!-- END MAIN CONTENT AREA -->
           </table>
-
-          <div class="wrapper bg_red">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="table-td" width="50%">
-                    <h3>100%</h3>
-                    <p class="fs-16">Viewability</p>
-                  </td>
-                  <td width="50%" class="table-td">
-                    <h3>38%</h3>
-                    <p class="fs-16">Engagement<br/>rate</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="50%" class="table-td">
-                    <h3>27 sec</h3>
-                    <p class="fs-16">Dwell time <br/>on a unit</p>
-                  </td>
-                  <td width="50%" class="table-td">
-                    <h3>40%</h3>
-                    <p class="fs-16">Video <br/>completion rate</p>
-                  </td>
-                </tr>
-            </table>
-          </div>
-
-          <div class="wrapper main2">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td colspan="3">
-                    <h2 class="red" style="margin-bottom: 40px;">Creative templates</h2>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="">
-                    <img src="https://cdn.probtn.com/emails/images/templates/icon-floating-video.png" alt="templates"/>
-                    <p class="fs-16">Floating video</p>
-                  </td>
-                  <td>
-                    <img src="https://cdn.probtn.com/emails/images/templates/icon-mini-games.png" alt="templates"/>
-                    <p class="fs-16">Mini-games</p>
-                  </td>
-                  <td>
-                    <img src="https://cdn.probtn.com/emails/images/templates/icon-branding.png" alt="templates"/>
-                    <p class="fs-16">Branding</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="">
-                    <img src="https://cdn.probtn.com/emails/images/templates/icon-sharing.png" alt="templates"/>
-                    <p class="fs-16">Sharing</p>
-                  </td>
-                  <td>
-                    <img src="https://cdn.probtn.com/emails/images/templates/icon-survey.png" alt="templates"/>
-                    <p class="fs-16">Survey</p>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-            </table>
-          </div>
-
-          <div class="wrapper publishers main2">
-            <h2 class="red mt0 mb0">Publishers</h2>
-            <img src="https://cdn.probtn.com/emails/images/publishers@2x.jpg" class="logos" alt="publishers"/>
-          </div>
-
-          <div class="wrapper light_blue">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td colspan="3">
-                    <p class="quote" style="font-size: 20px; font-style: italic;">“Viewst is a new rich media channel for us, which delivers high quality traffic. It definitely becomes one of the best performing channels of our ad campaigns.”</p>
-                    <p style="font-size: 16px;"><b>Alex Kovalenko, digital manager</b><br/>
-                    20th Century Fox</p>
-                  </td>
-                </tr>
-            </table>
-          </div>
-          <div class="wrapper advertisers main2">
-            <h2 class="red mt0 mb0" style="padding-top: 40px;">Advertisers</h2>
-            <img src="https://cdn.probtn.com/emails/images/advertisers@2x.jpg" class="logos" alt="advertisers"/>
-          </div>
-
           <!-- START FOOTER -->
           <div class="footer">
-            <center><img src="https://cdn.probtn.com/emails/images/logo-2.png?r=sf" class="footer-logo" alt="footer-logo" /></center>
+            <table class="footer-red" border="0" cellpadding="0" cellspacing="0">
+              <tr width="100%">
+                <td style="width: 100%; text-align: center;">
+                  <center>
+                    <p style="display: inline-block;">Заинтересовало?</p>
+                    <div class="btn">
+                      <a href="mailto:reklama@viewst.com" target="_blank">ПИШИТЕ НА REKLAMA@VIEWST.COM</a>
+                    </div>
+                  </center>
+                </td>
+              </tr>
+            </table>
+            <div class="footer-img">
+              <center><a href="https://viewst.com" target="_blank"><img src="https://cdn.probtn.com/emails/images/logo-2.png?r=sf" class="footer-logo" alt="footer-logo" /></a></center>
+            </div>
           </div>
           <!-- END FOOTER -->
           <!-- END CENTERED WHITE CONTAINER -->
