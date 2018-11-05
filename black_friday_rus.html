@@ -276,6 +276,7 @@
       ------------------------------------- */
 
   .btn {
+    box-sizing: border-box;
     width: 100%;
   }
 
@@ -302,22 +303,13 @@
     display: inline-block;
     font-size: 12px;
     margin: 0;
-    padding: 12px 56px;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 24px;
-  }
-
-  .footer-btn a {
-    border: solid 1px #ff6269;
-    border-radius: 24px;
-    cursor: pointer;
-    box-sizing: border-box;
     padding: 12px 25px;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
     line-height: 24px;
+    width: 149px;
+    height: 48px;
+    box-sizing: border-box;
   }
 
   .btn-primary table td {
@@ -540,9 +532,14 @@
     color: #ffffff;
     border-color: #ffffff;
     margin-bottom: 25px;
+    width: 295px;
+    height: 48px;
   }
 
   .img-star {
+    content: "";
+    background: url(https://cdn.probtn.com/emails/images/icon-star@2x.png?r=11) no-repeat;
+    background-size: cover;
     width: 14px;
     height: 14px;
     position: relative;
@@ -646,7 +643,7 @@ li + li{
                 <td style="width: 100%; text-align: center;">
                   <center>
                     <p style="display: inline-block;">Заинтересовало?</p>
-                    <div class="footer-btn">
+                    <div class="btn">
                       <a href="mailto:reklama@viewst.com" target="_blank">НАПИСАТЬ НА REKLAMA@VIEWST.COM</a>
                     </div>
                   </center>
@@ -664,6 +661,37 @@ li + li{
       <!--<td>&nbsp;</td>-->
     </tr>
   </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50882210 = new Ya.Metrika2({
+                    id:50882210,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50882210" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 </body>
 
 </html>
