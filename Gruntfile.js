@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 									'email4_inlined.html': 'email3_en.html',
 									'emai_bf_inlined.html': 'email_black_friday.html',
 									'email_ad_tech_brunch_inlined.html': 'email_ad_tech_brunch.html',
-									'email_bf_rus.html': 'email_black_friday_rus.html'
+									'email_bf_rus.html': 'email_black_friday_rus.html',
+									'email_gc_inlined_rus.html': 'email_gender_celebrations.html'
 	            },
 
 	        }
